@@ -10,6 +10,7 @@ This project is a simple relational database for managing a library's books, mem
 - Manage books with details like title, author, ISBN, and publication year.
 - Track library members and their contact information.
 - Record book borrow and return events for each member.
+- 
 
 ---
 
@@ -35,9 +36,8 @@ mysql -u your_username -p < library_management.sql
 
 ## Entity Relationship Diagram (ERD)
 
-You can use tools like [dbdiagram.io](https://dbdiagram.io) or MySQL Workbench to create your ERD.
+I used tools like [dbdiagram.io](https://dbdiagram.io) or MySQL Workbench to create my ERD.
 
-_Sample Screenshot Placeholder or ERD Link_
 
 ---
 
