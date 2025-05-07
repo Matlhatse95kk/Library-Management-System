@@ -57,4 +57,4 @@ To generate your ERD in MySQL Workbench:
 
 ## Author
 Your Name  
-[youremail@example.com](matlhatse95kk@gmail.com)
+(Matlhatse95kk@gmail.com)
