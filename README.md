@@ -1,58 +1,51 @@
 
-# Task Manager & Library Management System (MySQL + FastAPI)
+# Library Management System (MySQL)
 
-This repository contains two projects:
-
-1. **Library Management System** (SQL only)
-2. **Task Manager CRUD API** (MySQL + FastAPI)
+## Description
+This project is a simple relational database for managing a library's books, members, and borrowing records. It uses MySQL to define a normalized schema with constraints and relationships.
 
 ---
 
-## 1. Library Management System (SQL Only)
+## Features
+- Manage books with details like title, author, ISBN, and publication year.
+- Track library members and their contact information.
+- Record book borrow and return events for each member.
 
-### Description:
-A simple database to manage books, members, and borrow records for a library.
+---
 
-### How to Set Up:
+## How to Set Up
+
+### Using MySQL CLI or Workbench:
 1. Open MySQL or a GUI like MySQL Workbench.
-2. Import the SQL file: `library_management.sql`.
+2. Run the SQL script `library_management.sql`.
 
-### File:
-- `library_management.sql` – contains all `CREATE TABLE` statements with constraints and relationships.
-
----
-
-## 2. Task Manager CRUD API (FastAPI + MySQL)
-
-### Description:
-A web API for managing tasks and users, built using Python (FastAPI) and MySQL. Supports full CRUD operations.
-
-### How to Run:
-1. Create and configure a MySQL database.
-2. Import `task_manager_schema.sql` into your database.
-3. Update the `DATABASE_URL` in `task_manager_api.py` with your MySQL credentials.
-4. Install dependencies:
-   ```bash
-   pip install fastapi sqlalchemy pymysql uvicorn
-   ```
-5. Run the app:
-   ```bash
-   uvicorn task_manager_api:app --reload
-   ```
-
-### Files:
-- `task_manager_api.py` – FastAPI application code
-- `task_manager_schema.sql` – SQL script to create the `TaskManager` database
+```bash
+mysql -u your_username -p < library_management.sql
+```
 
 ---
 
-## ERD (Entity Relationship Diagram)
+## Database Schema Overview
 
-You can create your ERD using [dbdiagram.io](https://dbdiagram.io) or MySQL Workbench.
+- **Members**: stores user details.
+- **Books**: stores book information.
+- **BorrowRecords**: links members and books with borrow/return data.
 
-_Sample Screenshot Placeholder or Link_
+---
+
+## Entity Relationship Diagram (ERD)
+
+You can use tools like [dbdiagram.io](https://dbdiagram.io) or MySQL Workbench to create your ERD.
+
+_Sample Screenshot Placeholder or ERD Link_
+
+---
+
+## File Included
+- `library_management.sql` – SQL script to create all tables and relationships.
 
 ---
 
 ## Author
-Your Name – [your.email@example.com](mailto:your.email@example.com)
+Your Name  
+[youremail@example.com](mailto:youremail@example.com)
